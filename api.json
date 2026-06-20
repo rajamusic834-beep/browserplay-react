@@ -1,0 +1,78 @@
+{
+  "workers": {
+    "netx": {
+      "url": "https://secure-vercel-gateway-public.vercel.app/api/stream.json",
+      "used_in": [
+        "jtvlite/indexold.html",
+        "jtvlite/jtvliteplayer.html"
+      ]
+    },
+    "jtvplus": {
+      "url": "",
+      "used_in": [
+        "jtvplus/jtvplus.html",
+        "jtvplus/jtvplusplayer.html"
+      ]
+    }
+  },
+  "m3u8": {
+    "rajamods7_json": {
+      "url": "https://secure-vercel-gateway-public.vercel.app/api/allstream.json",
+      "used_in": [
+        "index.html",
+        "playifyplayer.html"
+      ],
+      "type": "json"
+    }
+  },
+  "apis": {
+    "fancode": {
+      "url": "https://raw.githubusercontent.com/Jitendra-unatti/fancode/refs/heads/main/data/fancode.json",
+      "used_in": [
+        "fancode/fancode.html",
+        "fancode/fancodeplayer.html"
+      ]
+    },
+    "backuptv": {
+      "url": "https://allinonereborn.online/jiotv-m3u/playlist698.m3u8",
+      "used_in": [
+        "backuptv/backuptv.html",
+        "backuptv/backuptvplayer.html"
+      ]
+    },
+    "tataplay": {
+      "url": "https://allinonereborn.online/tatatv-web/xchannels.json",
+      "used_in": [
+        "tataplay/tataplay.html"
+      ]
+    },
+    "airtel": {
+      "url": "https://allinonereborn.online/airteltv-web/xchannels.json",
+      "used_in": [
+        "airtel/airtel.html"
+      ]
+    },
+    "iptv": {
+      "url": "https://api.codetabs.com/v1/proxy?quest=https://allinonereborn.online//iptv-web/xchannels.json",
+      "used_in": [
+        "iptv/iptv.html"
+      ]
+    },
+    "zee5": {
+      "url": "zee5.json",
+      "used_in": [
+        "zee5/zee5player.html"
+      ]
+    }
+  },
+  "cookies": {
+    "fallback": {
+      "url": "",
+      "used_in": [
+        "playifyplayer.html",
+        "jtvplus/jtvplusplayer.html",
+        "jtvlite/jtvliteplayer.html"
+      ]
+    }
+  }
+}
