@@ -1,0 +1,338 @@
+/* Common styles shared across all index pages */
+body {
+    -webkit-user-select: none;
+    user-select: none;
+    font-family: "Segoe UI", Roboto, sans-serif;
+}
+
+.no-s::-webkit-scrollbar {
+    display: none;
+}
+
+.no-s {
+    scrollbar-width: none;
+}
+
+.asp {
+    aspect-ratio: 16/9;
+}
+
+.search-highlight {
+    background-color: yellow;
+    color: #000;
+    padding: 0 2px;
+    border-radius: 2px;
+    font-weight: bold;
+}
+
+.material-icons-round {
+    display: inline-flex;
+    vertical-align: middle;
+}
+
+#install-banner {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9999;
+    background: rgba(15, 23, 42, 0.95);
+    backdrop-filter: blur(10px);
+    border: 1px solid #69dc9e;
+    display: none;
+    align-items: center;
+    padding: 8px 12px;
+    border-radius: 50px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    width: auto;
+    min-width: 280px;
+    max-width: 90%;
+    animation: popIn 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes popIn {
+    from {
+        transform: translateX(-50%) translateY(50px) scale(0.8);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(-50%) translateY(0) scale(1);
+        opacity: 1;
+    }
+}
+
+.brand-title {
+    font-size: 1.2rem;
+    line-height: 1;
+}
+
+.brand-subtitle {
+    font-size: 11px !important;
+    letter-spacing: 0.1em;
+    margin-top: 2px;
+}
+
+@media (min-width: 400px) {
+    .brand-title {
+        font-size: 1.4rem;
+    }
+
+    .brand-subtitle {
+        font-size: 12px !important;
+    }
+}
+
+/* Play overlay - hidden by default */
+.play-overlay {
+    opacity: 0;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(0px);
+}
+
+/* Show overlay on hover */
+.group:hover .play-overlay {
+    opacity: 1;
+    backdrop-filter: blur(2px);
+}
+
+/* Play button animation */
+.play-btn {
+    transform: scale(0.8);
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.group:hover .play-btn {
+    transform: scale(1.2);
+}
+
+/* Card hover effects - red highlight - always visible */
+.card {
+    transition: all 0.3s ease;
+    border: 2px solid #ef4444;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    border-color: #ef4444;
+}
+
+/* Favorite button hover */
+.card button:hover {
+    background-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+/* Image hover zoom effect */
+.card img {
+    transition: transform 0.5s ease;
+}
+
+.group:hover .card img {
+    transform: scale(1.1);
+}
+
+/* Category button active state - hardcoded red */
+.btn-error,
+.btn-error.btn {
+    background-color: #ef4444 !important;
+    border-color: #ef4444 !important;
+    color: white !important;
+}
+
+.btn-error.text-white,
+.btn-error.btn.text-white {
+    color: white !important;
+}
+
+/* Search input focus - hardcoded red */
+.input:focus,
+.input.input:focus {
+    border-color: #ef4444 !important;
+    box-shadow: 0 0 0 2px rgba(239, 68, 68, 0.2) !important;
+}
+
+/* Badge styles - hardcoded red */
+.badge-error,
+.badge.badge-error {
+    background-color: #ef4444 !important;
+    border-color: #ef4444 !important;
+    color: white !important;
+}
+
+/* Loading spinner - hardcoded red */
+.loading,
+.loading-spinner,
+.loading.loading-spinner {
+    color: #ef4444 !important;
+}
+
+.text-error,
+.text-error\. {
+    color: #ef4444 !important;
+}
+
+/* Channel card border highlight on hover */
+.card-compact {
+    border-width: 2px;
+}
+
+.card-compact:hover {
+    border-color: #ef4444 !important;
+}
+
+/* Smooth channel list transitions */
+#cL {
+    scroll-behavior: smooth;
+}
+
+/* Drop shadow for tetedier banner */
+#poster-banner img {
+    transition: transform 0.3s ease;
+}
+
+#poster-banner:hover img {
+    transform: scale(1.02);
+}
+
+/* Drawer menu hover effects */
+.menu li a:hover {
+    background-color: rgba(239, 68, 68, 0.1);
+}
+
+/* Active menu item */
+.menu li a.active {
+    background-color: rgba(239, 68, 68, 0.2);
+    color: #ef4444;
+}
+
+/* Favorite icon animation */
+.favorite-btn {
+    transition: transform 0.2s ease;
+}
+
+.favorite-btn:active {
+    transform: scale(1.3);
+}
+
+/* Search input styling */
+.join .input:focus {
+    outline: none;
+}
+
+/* Grid gap animation */
+#g {
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Button hover scale */
+.btn:hover {
+    transform: scale(1.02);
+}
+
+/* Poster banner shadow */
+#poster-banner {
+    animation: slideDown 0.5s ease;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Navbar shadow */
+.navbar {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Card shadow enhancement */
+.card {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* Hover glow effect (disabled) */
+/*.card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 2px;
+    background: linear-gradient(45deg, transparent, rgba(239, 68, 68, 0.3), transparent);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.card:hover::before {
+    opacity: 1;
+}*/
+
+/* Badge position */
+.badge {
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Force red color for error text class */
+.text-error {
+    color: #ef4444 !important;
+}
+
+.material-icons-round.text-error {
+    color: #ef4444 !important;
+}
+/* Robust Light/Dark Mode Customizations */
+.theme-icon { transition: color 0.2s ease; }
+.theme-border { transition: border-color 0.2s ease; }
+
+[data-theme="light"] .theme-icon { color: #1f2937 !important; }
+[data-theme="dark"] .theme-icon { color: #ffffff !important; }
+[data-theme="light"] .theme-border { border-color: rgba(0, 0, 0, 0.2) !important; }
+[data-theme="dark"] .theme-border { border-color: rgba(255, 255, 255, 0.2) !important; }
+
+/* Card Overlay contrast fix for light mode */
+[data-theme="light"] .bg-black\/20 { background-color: rgba(0,0,0,0.05) !important; }
+[data-theme="light"] .bg-black\/40 { background-color: rgba(255,255,255,0.6) !important; }
+[data-theme="light"] .bg-black\/50 { background-color: rgba(255,255,255,0.5) !important; }
+[data-theme="light"] .bg-black\/60 { background-color: rgba(255,255,255,0.4) !important; }
+
+/* Specific text adaptations for favorites / error bounds */
+[data-theme="light"] .hover\:text-white:hover { color: #1f2937 !important; }
+[data-theme="dark"] .hover\:text-white:hover { color: #ffffff !important; }
+
+/* Anti-lag robust transition killer */
+.theme-transitioning * { transition: none !important; }
+
+/* Force text colors in the install banner since its background is always dark */
+#install-banner p, 
+#install-banner h4 {
+    color: #ffffff !important;
+}
+#install-banner p {
+    opacity: 0.7 !important;
+}
+#install-banner .btn-ghost {
+    color: rgba(255, 255, 255, 0.6) !important;
+}
+#install-banner .btn-ghost:hover {
+    color: rgba(255, 255, 255, 1) !important;
+}
