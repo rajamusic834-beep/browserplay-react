@@ -1,0 +1,55 @@
+# Dependencies
+node_modules/**
+
+# Git
+.git/**
+
+# GitHub Actions
+.github/**
+
+# Wrangler
+.wrangler/**
+
+# Python
+venv/
+.venv/
+__pycache__/
+*.py
+*.pyc
+
+# Environment
+.env
+
+# Editor
+.vscode/
+
+# Package files
+package.json
+package-lock.json
+bun.lockb
+
+# Config files
+wrangler.jsonc
+wrangler.toml
+wrangler-player.toml
+
+# Track files
+.deploy-track.json
+
+# Documentation
+README.md
+
+# TypeScript/JS sources (except player.js which is needed)
+*.ts
+*.cjs
+
+# Edge functions (deployed via InsForge, not Cloudflare Pages)
+edge-functions/**
+
+# Exclude build artifacts that shouldn't be uploaded
+**/workerd
+**/*.wasm
+
+# Exclude large binaries
+**/bin/**
+**/dist/workerd
