@@ -1,0 +1,105 @@
+=== Auto Deploy Worker ===
+Current IST Time: 2026-04-02T18:22:25.596Z
+Today: 02-04-2026
+Mode: FORCE
+Match found: SRH vs KKR
+
+🚀 Deploying for: SRH vs KKR
+   Match Date: 02-04-2026 at 18:00 IST
+  Copied: index.html
+  Copied: airtel.html
+  Copied: backuptv.html
+  Copied: fancode.html
+  Copied: iptv.html
+  Copied: jtvplus.html
+  Copied: jtvliteplayer.html
+  Copied: jtvplusplayer.html
+  Copied: playifyplayer.html
+  Copied: tataplay.html
+  Copied: zee5.html
+  Copied: zee5player.html
+  Copied: backuptvplayer.html
+  Copied: fancodeplayer.html
+  Copied: test.html
+  Copied: indexold.html
+  Copied: manifest.json
+  Copied: common.css
+  Copied: favicon.ico
+  Copied: service-worker.js
+  Copied: sw.js
+  Copied: highlight.js
+  Copied: api.json
+  Copied: zee5.json
+  Copied: images/screenshot1.png
+  Copied: icons/icon-96x96.png
+  Copied: icons/icon-192x192.png
+  Copied: icons/icon-512x512.png
+Built dist folder with static assets
+Deploying Ads worker...
+
+ ⛅️ wrangler 4.78.0 (update available 4.80.0)
+─────────────────────────────────────────────
+🌀 Building list of assets...
+✨ Read 30 files from the assets directory /home/runner/work/rajamods7-ads/rajamods7-ads/dist
+🌀 Starting asset upload...
+🌀 Found 28 new or modified static assets to upload. Proceeding with upload...
++ /service-worker.js
++ /manifest.json
++ /common.css
++ /zee5.html
++ /zee5player.html
++ /backuptv.html
++ /airtel.html
++ /iptv.html
++ /index.html
++ /images/screenshot1.png
++ /highlight.js
++ /sw.js
++ /test.html
++ /zee5.json
++ /fancode.html
++ /jtvplusplayer.html
++ /indexold.html
++ /jtvliteplayer.html
++ /icons/icon-192x192.png
++ /api.json
++ /favicon.ico
++ /fancodeplayer.html
++ /icons/icon-96x96.png
++ /backuptvplayer.html
++ /jtvplus.html
++ /tataplay.html
++ /playifyplayer.html
++ /icons/icon-512x512.png
+Uploaded 9 of 28 assets
+Uploaded 19 of 28 assets
+Uploaded 28 of 28 assets
+✨ Success! Uploaded 28 files (1.53 sec)
+
+Total Upload: 18.69 KiB / gzip: 4.71 KiB
+Uploaded ads-02042026 (7.86 sec)
+Deployed ads-02042026 triggers (1.18 sec)
+  https://ads-02042026.colfrazier1973.workers.dev
+Current Version ID: 236d8a64-3abc-4796-9183-c6b14568704d
+
+Cloudflare collects anonymous telemetry about your usage of Wrangler. Learn more at https://github.com/cloudflare/workers-sdk/tree/main/packages/wrangler/telemetry.md
+
+Fetching latest version ID for ads-02042026...
+Deployed: ads-02042026 | Version: 0d5e1ca
+Deploying Player worker...
+
+ ⛅️ wrangler 4.78.0 (update available 4.80.0)
+─────────────────────────────────────────────
+Total Upload: 24.64 KiB / gzip: 6.97 KiB
+Worker Startup Time: 18 ms
+Uploaded player-02042026 (4.00 sec)
+Deployed player-02042026 triggers (2.73 sec)
+  https://player-02042026.colfrazier1973.workers.dev
+Current Version ID: 4c4f3a14-b187-4156-8171-f881279d2ef5
+
+Fetching latest version ID for player-02042026...
+Deployed: player-02042026 | Version: 4c4f3a1
+
+✅ Deployment successful!
+
+=== Deployment Complete ===
